@@ -47,9 +47,12 @@ spec:
           requests:
             cpu: "1"
             memory: 500Mi
+    # plugins:
+    # - name: simple-theme-plugin
+    #   version: "0.6"
   seedJobs:
     - id: jenkins-operator
       targets: "cicd/jobs/*.jenkins"
       description: "Jenkins Operator repository"
       repositoryBranch: main
-      repositoryUrl: https://github.com/bponath/jenkins
+      repositoryUrl: https://github.com/bponath/jenkins.git
